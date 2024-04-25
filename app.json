@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "MyTabNavigatorApp",
+    "slug": "MyTabNavigatorApp",
+    "version": "1.0.0",
+    "clerkPublishableKey": "process.env.CLERK_PUBLISHABLE_KEY",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.akhil.thej.MyTabNavigatorApp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b8d7d8bc-c234-40dc-9a99-daf54e1bf87b"
+      }
+    },
+    "scheme": "mytabnavigatorapp"
+  }
+}
