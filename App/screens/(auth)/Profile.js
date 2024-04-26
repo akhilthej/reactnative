@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useAuth } from '@clerk/clerk-expo';
 import { useUser } from '@clerk/clerk-expo'
@@ -17,9 +17,9 @@ const Profile = () => {
         <Text className='text-[24px] text-center font-bold'>Your Dashboard</Text>
         <Text className='text-[14px] text-center text-slate-500  mt-2'>Thanks For Choosing us.</Text>
 
-        <View onPress={() => {signOut();}} className='p-3 bg-teal-700 rounded-md mt-20'>
+        <TouchableOpacity onPress={() => {signOut();}} className='p-3 bg-teal-700 rounded-md mt-20'>
           <Text className='text-[20px] text-center font-bold text-white  px-22' >Sign Out</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
 
